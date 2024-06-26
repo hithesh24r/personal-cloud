@@ -25,7 +25,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 cd /home/ubuntu/
 mkdir /home/ubuntu/photoprism
 wget https://s3.amazonaws.com/mountpoint-s3-release/latest/x86_64/mount-s3.deb
-sudo apt-get install ./mount-s3.deb
+sudo apt-get install ./mount-s3.deb -y
 mount-s3 --cache personal-cloud-hithesh24r /home/ubuntu/photoprism/
 
 docker compose -f nginx.yaml up -d
